@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "fitbit": {
+    "appUUID": "46fb7e06-fd54-4e94-8037-d03b822f92fc",
+    "appType": "app",
+    "appDisplayName": "Test Heart Rate",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffeb3b",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_internet"
+    ],
+    "buildTargets": [
+      "mira"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Test Heart Rate"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "keytar": "^7.9.0",
+    "node-fetch": "^2.6.9",
+    "websocket": "^1.0.34",
+    "ws": "^8.12.0"
+  }
+}
